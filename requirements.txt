@@ -1,6 +1,7 @@
 pandas
 mlflow
-notebooknumpy  
+notebook
+numpy  
 scikit-learn
 matplotlib
 python-box==6.0.2
