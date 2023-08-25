@@ -16,11 +16,11 @@ jobs:
 
     steps:
     - name: Checkout code
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
       with:
         fetch-depth: 0
     - name: Set up Python 3.8
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v3
       with:
         python-version: 3.8
 
@@ -30,12 +30,11 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
     - name: Deploy to Render
-      uses: renderhq/github-action@1.2.0
+      uses: johnbeynon/render-deploy-action@v0.0.8
       with:
-        render_token: ${{ secrets.RENDER_TOKEN }}
-        render_yaml: main.yaml
-        
-
+        service-id: ${{ secrets.SERVICE_ID }} # can be found as part of the Deploy Hook
+        api-key: ${{ secrets.RENDER_API_KEY}} # create your API key in Render Dashboard > Account
+        render_yaml: main.yaml        
 
 
  
