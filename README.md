@@ -2,7 +2,7 @@
 
 
 
-## workflows
+### workflows
 
 1. Update config.yaml
 2. Update schema.yaml
@@ -15,7 +15,7 @@
 9. Update the app.py
 
 
-# How to run?
+## How to run?
 ### STEPS:
 
 Clone the repository
@@ -139,11 +139,11 @@ export MLFLOW_TRACKING_PASSWORD=758a12655f75625c15f39939bd1fda36c0cc2384
 
 	newgrp docker
 	
-# 6. Configure EC2 as self-hosted runner:
+## 6. Configure EC2 as self-hosted runner:
     setting>actions>runner>new self hosted runner> choose os> then run command one by one
 
 
-# 7. Setup github secrets:
+## 7. Setup github secrets:
 
     AWS_ACCESS_KEY_ID=
 
@@ -155,12 +155,19 @@ export MLFLOW_TRACKING_PASSWORD=758a12655f75625c15f39939bd1fda36c0cc2384
 
     ECR_REPOSITORY_NAME = simple-app
 
-
-
-
 ## About MLflow 
 MLflow
 
  - Its Production Grade
  - Trace all of your expriements
  - Logging & tagging your model
+
+## Project working Images
+### Home Page
+![home page](https://github.com/user-attachments/assets/eac55c0b-7b94-41b5-a2c9-73ce0582a453)
+### Inference
+![winequality prediction](https://github.com/user-attachments/assets/50b98b18-4693-45cf-bff2-dd2763d8cd28)
+### Predicted result
+![predicted result](https://github.com/user-attachments/assets/7671649b-cf7f-4787-94e4-5914f5404996)
+
+
