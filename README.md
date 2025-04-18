@@ -139,8 +139,8 @@ export MLFLOW_TRACKING_PASSWORD=########c15f39939########
 
 	newgrp docker
 	
-## 6. Configure EC2 as self-hosted runner:
-    setting>actions>runner>new self hosted runner> choose os> then run command one by one
+## 6. Configure EC2 as self-hosted runner in Github:
+    Github>setting>actions>runner>new self hosted runner> choose os linux> then run linux command shown in github one by one into EC2
 
 
 ## 7. Setup github secrets:
